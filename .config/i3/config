@@ -100,6 +100,7 @@ bindsym $mod+F5 exec $terminal -e 'ncmpcpp'
 bindsym $mod+F6 exec gnome-calculator
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
+bindsym $mod+Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/' -d 5
 
 # Lock screen
 bindsym $mod+Shift+x exec $locker 
