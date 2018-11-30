@@ -11,7 +11,8 @@ polybar top &
 polybar bottom &
 
 if xrandr | grep "HDMI-1-2 connected"
-then polybar i3bar &
+then polybar top_secondary &
+  polybar bottom_secondary &
 fi
 
 echo "Polybar Launched"
