@@ -290,7 +290,7 @@ label = %{A3:kitty -e htop -s PERCENT_MEM & disown:} %percentage_used%%%{A}
 [module/network]
 type = internal/network
 interface = wlo1
-label-connected =  %downspeed% |   %upspeed%
+label-connected =  %downspeed% |  %upspeed%
 
 [module/temperature]
 type = internal/temperature
