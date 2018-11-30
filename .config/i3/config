@@ -92,9 +92,11 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # start applications
 bindsym $mod+F1 exec $terminal -e 'vim'
-bindsym $mod+F2 exec vivaldi-stable
-bindsym $mod+F3 exec $terminal -e 'ranger' 
-bindsym $mod+Shift+F3 exec sudo $terminal -e 'ranger' 
+bindsym $mod+F2 exec firefox 
+bindsym $mod+F3 exec pcmanfm 
+bindsym $mod+Shift+F3 exec gksu pcmanfm 
+# bindsym $mod+F3 exec $terminal -e 'ranger' 
+# bindsym $mod+Shift+F3 exec sudo $terminal -e 'ranger' 
 bindsym $mod+F4 exec mailspring
 bindsym $mod+F5 exec $terminal -e 'ncmpcpp'
 bindsym $mod+F6 exec gnome-calculator

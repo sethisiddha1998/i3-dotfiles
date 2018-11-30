@@ -28,7 +28,7 @@ override-redirect = true
 ; FONTS ;
 ;-------;
 
-font-0 = "Hasklig Nerd Font:size=10;3"
+font-0 = "Hasklug Nerd Font Mono:size=10;3"
 font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=12;3"
 font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=12;3"
 font-3 = "Font Awesome 5 Brands:pixelsize=12;3"
@@ -52,7 +52,7 @@ module-margin = 1.5
 
 modules-left = battery volume backlight
 modules-center = date time 
-modules-right = wlan cpu memory network
+modules-right = wlan cpu memory temperature network
 
 [bar/bottom]
 ;------------;
@@ -142,7 +142,7 @@ override-redirect = true
 ; FONTS ;
 ;-------;
 
-font-0 = "WenQuanYi Micro Hei Mono:size=10;3"
+font-0 = "Hasklig Nerd Font Mono:size=10;3"
 font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=10;3"
 font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=10;3"
 font-3 = "Font Awesome 5 Brands:pixelsize=10;3"
@@ -196,7 +196,6 @@ type = internal/date
 date =  %Y-%m-%d% 
 label = %date%
 
-
 [module/battery]
 type = internal/battery
 
@@ -224,6 +223,7 @@ ramp-capacity-4 = 
 type = internal/pulseaudio
 format-volume = %{A3:exec kitty -e pulsemixer & disown:}<ramp-volume> <label-volume>%{A}
 format-muted = %{A3:exec kitty -e pulsemixer & disown:} 0%%{A}
+interval = 1
 
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -278,13 +278,20 @@ label-disconnected = %{A3:exec networkmanager_dmenu & disown:} Not Connected%
 
 [module/cpu]
 type = internal/cpu
-label =  %percentage%%
+label = %{A3:kitty -e htop -s PERCENT_CPU & disown:} %percentage%%%{A}
 
 [module/memory]
 type = internal/memory
-label =  %gb_used%
+label = %{A3:kitty -e htop -s PERCENT_MEM & disown:} %percentage_used%%%{A}
 
 [module/network]
 type = internal/network
 interface = wlo1
 label-connected =  %downspeed% |   %upspeed%
+
+[module/temperature]
+type = internal/temperature
+warn-temperature = 60
+label = %{A3:kitty -e watch sensors & disown:} %temperature-c%%{A}
+label-warn = %{A3:kitty -e watch sensors & disown:} %temperature-c%%{A}
+label-warn-foreground = #dc322f
