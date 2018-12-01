@@ -19,8 +19,7 @@ border-left-size = 16
 ;----------;
 
 bottom = false
-monitor = HDMI-1-2
-monitor-fallback = eDP1
+monitor = DVI-I-1
 wm-restack = i3
 override-redirect = true 
 
@@ -28,10 +27,10 @@ override-redirect = true
 ; FONTS ;
 ;-------;
 
-font-0 = "Hasklug Nerd Font Mono:size=10;0"
-font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=10;2"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=10;2"
-font-3 = "Font Awesome 5 Brands:pixelsize=10;2"
+font-0 = "Font Awesome 5 Free:style=Solid:pixelsize=9;0"
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=9;0"
+font-2 = "Font Awesome 5 Brands:pixelsize=9;0"
+font-3 = "Hasklug Nerd Font Mono:size=10;0"
 font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 
 ;--------;
@@ -39,7 +38,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #859900
+foreground = #2aa198
 border-color = 0
 
 ;---------------;
@@ -51,9 +50,9 @@ padding-left = 2
 padding-right = 2
 module-margin = 1.5
 
-modules-left = battery volume backlight
-modules-center = date time 
-modules-right = wlan cpu memory temperature network
+;modules-left = battery volume backlight
+;modules-center = date time 
+modules-right = cpu memory temperature network
 
 [bar/bottom]
 ;------------;
@@ -75,8 +74,7 @@ border-left-size = 16
 ;----------;
 
 bottom = true
-monitor = HDMI-1-2
-monitor-fallback = eDP1
+monitor = DVI-I-1
 wm-restack = i3
 override-redirect = true
 
@@ -84,9 +82,9 @@ override-redirect = true
 ; FONTS ;
 ;-------;
 
-font-0 = "Font Awesome 5 Free:style=Solid:pixelsize=10;2"
-font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=10;2"
-font-2 = "Font Awesome 5 Brands:pixelsize=10;2"
+font-0 = "Font Awesome 5 Free:style=Solid:pixelsize=9;0"
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=9;0"
+font-2 = "Font Awesome 5 Brands:pixelsize=9;0"
 font-3 = "Hasklug Nerd Font Mono:size=10;0"
 font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 
@@ -95,7 +93,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #859900
+foreground = #2aa198
 border-color = 0
 
 ;---------------;
@@ -107,7 +105,7 @@ padding-left = 2
 padding-right = 2
 module-margin = 1.5
 
-modules-left = mpd 
+;modules-left = mpd 
 modules-center = i3
 ;modules-right = 
 
@@ -137,7 +135,7 @@ border-left-size = 16
 ;----------;
 
 bottom = false
-monitor = eDP1
+monitor = VGA-1
 wm-restack = i3
 override-redirect = true 
 
@@ -145,10 +143,10 @@ override-redirect = true
 ; FONTS ;
 ;-------;
 
-font-0 = "Hasklug Nerd Font Mono:size=10;0"
-font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=10;2"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=10;2"
-font-3 = "Font Awesome 5 Brands:pixelsize=10;2"
+font-0 = "Font Awesome 5 Free:style=Solid:pixelsize=9;0"
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=9;0"
+font-2 = "Font Awesome 5 Brands:pixelsize=9;0"
+font-3 = "Hasklug Nerd Font Mono:size=10;0"
 font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 
 ;--------;
@@ -156,7 +154,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #859900
+foreground = #2aa198
 border-color = 0
 
 ;---------------;
@@ -168,7 +166,7 @@ padding-left = 2
 padding-right = 2
 module-margin = 1.5
 
-modules-left = backlight
+modules-left = date time 
 ;modules-center =
 ;modules-right =
 
@@ -184,15 +182,15 @@ offset-x = 0
 
 border-top-size = 0
 border-bottom-size = 3 
-border-right-size = 10
-border-left-size = 10
+border-right-size = 16
+border-left-size = 16
 
 ;----------;
 ; LOCATION ;
 ;----------;
 
 bottom = true
-monitor = eDP1 
+monitor = VGA-1
 wm-restack = i3
 override-redirect = true
 
@@ -200,10 +198,10 @@ override-redirect = true
 ; FONTS ;
 ;-------;
 
-font-0 = "Hasklug Nerd Font Mono:size=10;0"
-font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=10;2"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=10;2"
-font-3 = "Font Awesome 5 Brands:pixelsize=10;2"
+font-0 = "Font Awesome 5 Free:style=Solid:pixelsize=9;0"
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=9;0"
+font-2 = "Font Awesome 5 Brands:pixelsize=9;0"
+font-3 = "Hasklug Nerd Font Mono:size=10;0"
 font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 
 ;--------;
@@ -211,7 +209,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #859900
+foreground = #2aa198
 border-color = 0
 
 ;---------------;
@@ -223,7 +221,7 @@ padding-left = 2
 padding-right = 2
 module-margin = 1.5
 
-;modules-left = i3 
+modules-left = volume mpd 
 modules-center = i3
 ;modules-right = 
 
@@ -239,8 +237,8 @@ pin-workspaces = true
 strip-wsnumbers = true
 enable-scroll = false
 
-label-unfocused-foreground = #2aa198
-label-focused-foreground = #859900
+label-unfocused-foreground = #586e75
+label-focused-foreground = #2aa198
 label-urgent-foreground = #dc322f
 
 [module/time]
@@ -345,12 +343,12 @@ label = %{A3:kitty -e htop -s PERCENT_MEM & disown:} %percentage_used%%%{A}
 
 [module/network]
 type = internal/network
-interface = wlo1
+interface = eno1
 label-connected =  %downspeed% |  %upspeed%
 
 [module/temperature]
 type = internal/temperature
 warn-temperature = 60
-label = %{A3:kitty -e watch sensors & disown:} %temperature-c%%{A}
-label-warn = %{A3:kitty -e watch sensors & disown:} %temperature-c%%{A}
+label = %{A3:kitty -e watch sensors & disown:} %temperature-c%%{A}
+label-warn = %{A3:kitty -e watch sensors & disown:} %temperature-c%%{A}
 label-warn-foreground = #dc322f

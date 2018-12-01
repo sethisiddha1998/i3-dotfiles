@@ -9,10 +9,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # Launch bar1 and bar2
 polybar top &
 polybar bottom &
-
-if xrandr | grep "HDMI-1-2 connected"
-then polybar top_secondary &
-  polybar bottom_secondary &
-fi
+polybar top_secondary &
+polybar bottom_secondary
 
 echo "Polybar Launched"
