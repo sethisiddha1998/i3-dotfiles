@@ -66,11 +66,11 @@ exec --no-startup-id fcitx
 #exec --no-startup-id volumeicon
 #bindsym $mod+Ctrl+s exec $terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
-exec --no-startup-id pa-applet
+#exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+s exec $terminal -e 'pulsemixer'
 
 # wifi
-bindsym $mod+Ctrl+i exec networkmanager_dmenu 
+#bindsym $mod+Ctrl+i exec networkmanager_dmenu 
 
 # bluetooth
 #bindsym $mod+Ctrl+b exec blueberry
