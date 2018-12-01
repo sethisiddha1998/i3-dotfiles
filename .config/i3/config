@@ -11,7 +11,7 @@
 
 set $mod Mod4
 set $terminal kitty
-set $locker blurlock  
+set $locker i3lock --blur=5  
 
 set $mon1 VGA-1
 set $mon2 DVI-I-1
@@ -145,7 +145,7 @@ exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id xautolock -detectsleep -time 15 -locker $locker 
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift
-exec --no-startup-id sleep 3; kalu
+exec --no-startup-id kalu
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # change focus
@@ -213,16 +213,16 @@ set $ws10 "0"
 
 # assign workspace to monitors
 
-workspace $ws1 output $mon2
-workspace $ws2 output $mon1
-workspace $ws3 output $mon2
-workspace $ws4 output $mon1
-workspace $ws5 output $mon2
-workspace $ws6 output $mon1
-workspace $ws7 output $mon2
-workspace $ws8 output $mon1
-workspace $ws9 output $mon2
-workspace $ws10 output $mon1
+workspace $ws1 output $mon1
+workspace $ws2 output $mon2
+workspace $ws3 output $mon1
+workspace $ws4 output $mon2
+workspace $ws5 output $mon1
+workspace $ws6 output $mon2
+workspace $ws7 output $mon1
+workspace $ws8 output $mon2
+workspace $ws9 output $mon1
+workspace $ws10 output $mon2
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
