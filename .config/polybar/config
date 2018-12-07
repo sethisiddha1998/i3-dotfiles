@@ -19,8 +19,8 @@ border-left-size = 16
 ;----------;
 
 bottom = false
-monitor = HDMI-1-2
-monitor-fallback = eDP1
+monitor = HDMI-0
+monitor-fallback = eDP-1-1
 wm-restack = i3
 override-redirect = true 
 
@@ -75,8 +75,8 @@ border-left-size = 16
 ;----------;
 
 bottom = true
-monitor = HDMI-1-2
-monitor-fallback = eDP1
+monitor = HDMI-0
+monitor-fallback = eDP-1-1
 wm-restack = i3
 override-redirect = true
 
@@ -137,7 +137,7 @@ border-left-size = 16
 ;----------;
 
 bottom = false
-monitor = eDP1
+monitor = eDP-1-1
 wm-restack = i3
 override-redirect = true 
 
@@ -192,7 +192,7 @@ border-left-size = 10
 ;----------;
 
 bottom = true
-monitor = eDP1 
+monitor = eDP-1-1 
 wm-restack = i3
 override-redirect = true
 
