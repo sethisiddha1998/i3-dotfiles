@@ -101,8 +101,8 @@ bindsym $mod+F4 exec mailspring
 bindsym $mod+F5 exec $terminal -e 'ncmpcpp'
 bindsym $mod+F6 exec gnome-calculator
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
-bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
-bindsym $mod+Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/' -d 5
+bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.png' -e 'mv $f ~/Pictures/'
+bindsym $mod+Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.png' -e 'mv $f ~/Pictures/' -d 5
 
 # Lock screen
 bindsym $mod+Shift+x exec $locker 
@@ -140,13 +140,12 @@ bindsym $mod+x mode "$mode_system"
 #bindsym $mod+Ctrl+m mode "$mode_display"
 
 # autostart
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id xautolock -detectsleep -time 15 -locker $locker 
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift
-exec --no-startup-id kalu
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # change focus
 bindsym $mod+j focus left

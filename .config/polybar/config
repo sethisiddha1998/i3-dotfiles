@@ -38,7 +38,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #2aa198
+foreground = #ffe6f4
 border-color = 0
 
 ;---------------;
@@ -93,7 +93,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #2aa198
+foreground = #ffe6f4
 border-color = 0
 
 ;---------------;
@@ -154,7 +154,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #2aa198
+foreground = #ffe6f4
 border-color = 0
 
 ;---------------;
@@ -166,7 +166,7 @@ padding-left = 2
 padding-right = 2
 module-margin = 1.5
 
-modules-left = date time 
+modules-left = date time updates 
 ;modules-center =
 ;modules-right =
 
@@ -209,7 +209,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #2aa198
+foreground = #ffe6f4
 border-color = 0
 
 ;---------------;
@@ -237,9 +237,9 @@ pin-workspaces = true
 strip-wsnumbers = true
 enable-scroll = false
 
-label-unfocused-foreground = #586e75
-label-focused-foreground = #2aa198
-label-urgent-foreground = #dc322f
+label-unfocused-foreground = #ffbde1
+label-focused-foreground = #ffe6f4
+label-urgent-foreground = #ba5297
 
 [module/time]
 type = internal/date
@@ -349,6 +349,14 @@ label-connected =  %downspeed% |  %upspeed%
 [module/temperature]
 type = internal/temperature
 warn-temperature = 60
+thermo-zone = 2 
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input
 label = %{A3:kitty -e watch sensors & disown:} %temperature-c%%{A}
 label-warn = %{A3:kitty -e watch sensors & disown:} %temperature-c%%{A}
 label-warn-foreground = #dc322f
+
+[module/updates]
+type = custom/script
+exec = ~/.config/polybar/scripts/updates-arch-combined.sh
+label = %{A3:exec kitty -e yay -Syu --noconfirm --answerclean None --answerdiff None --answeredit None --answerupgrade None --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake & disown:} %output%%{A}
+interval = 600
