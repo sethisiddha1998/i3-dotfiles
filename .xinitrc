@@ -57,6 +57,7 @@ if xrandr | grep "HDMI-0 disconnected"; then
   ~/.screenlayout/single.sh
 else
   ~/.screenlayout/dual.sh
+   nvidia-settings --assign CurrentMetaMode="DPY-0: nvidia-auto-select @1920x1080 +1920+0 {ForceCompositionPipeline=On, ForceFullCompositionPipeline=On}"
 fi
 
 numlockx &

@@ -10,7 +10,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 polybar top &
 polybar bottom &
 
-if xrandr | grep "HDMI-1-2 connected"
+if xrandr | grep "HDMI-0 connected"
 then polybar top_secondary &
   polybar bottom_secondary &
 fi

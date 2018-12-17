@@ -39,7 +39,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #859900
+foreground = #268bd2
 border-color = 0
 
 ;---------------;
@@ -51,7 +51,7 @@ padding-left = 2
 padding-right = 2
 module-margin = 1.5
 
-modules-left = battery volume backlight
+modules-left = battery volume backlight updates
 modules-center = date time 
 modules-right = wlan cpu memory temperature network
 
@@ -95,7 +95,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #859900
+foreground = #268bd2
 border-color = 0
 
 ;---------------;
@@ -156,7 +156,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #859900
+foreground = #268bd2
 border-color = 0
 
 ;---------------;
@@ -211,7 +211,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #859900
+foreground = #268bd2
 border-color = 0
 
 ;---------------;
@@ -240,7 +240,7 @@ strip-wsnumbers = true
 enable-scroll = false
 
 label-unfocused-foreground = #2aa198
-label-focused-foreground = #859900
+label-focused-foreground = #268bd2
 label-urgent-foreground = #dc322f
 
 [module/time]
@@ -354,3 +354,10 @@ warn-temperature = 60
 label = %{A3:kitty -e watch sensors & disown:} %temperature-c%%{A}
 label-warn = %{A3:kitty -e watch sensors & disown:} %temperature-c%%{A}
 label-warn-foreground = #dc322f
+
+[module/updates]
+type = custom/script
+exec = ~/.config/polybar/scripts/updates-arch-combined.sh
+label = %{A3:exec kitty -e yay -Syu --noconfirm --answerclean None --answerdiff None --answeredit None --answerupgrade None --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --removemake & disown:} %output%%{A}
+interval = 600
+
