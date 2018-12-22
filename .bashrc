@@ -16,3 +16,4 @@ POWERLINE_BASH_SELECT=1
 . /usr/share/powerline/bindings/bash/powerline.sh
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
