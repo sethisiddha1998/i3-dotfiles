@@ -7,6 +7,8 @@
 
 alias ls='ls --color=auto'
 alias please='sudo'
+alias bye='poweroff'
+alias fastai='conda activate fastai'
 PS1='[\u@\h \W]\$ '
 
 source <(kitty + complete setup bash)
