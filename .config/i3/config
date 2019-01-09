@@ -100,8 +100,8 @@ bindsym $mod+F4 exec mailspring
 bindsym $mod+F5 exec $terminal -e 'ncmpcpp'
 bindsym $mod+F6 exec gnome-calculator
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
-bindsym Print exec scrot -q 100 '%Y-%m-%d-%s_screenshot_$wx$h.png' -e 'mv $f ~/Pictures/'
-bindsym $mod+Print exec scrot -q 100 '%Y-%m-%d-%s_screenshot_$wx$h.png' -e 'mv $f ~/Pictures/' -d 5
+bindsym Print exec scrot -q 80 '%Y-%m-%d-%s_screenshot_$wx$h.png' -e 'mv $f ~/Pictures/'
+bindsym $mod+Print exec scrot -q 80 '%Y-%m-%d-%s_screenshot_$wx$h.png' -e 'mv $f ~/Pictures/' -d 5
 
 # Lock screen
 bindsym $mod+Shift+x exec $locker 
