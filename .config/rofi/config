@@ -6,7 +6,7 @@ rofi.hide-scrollbar: true
 rofi.bw: 2
 rofi.padding: 36
 rofi.color-enabled: true
-rofi.color-window: #002b36,#002b36,#002b36
-rofi.color-normal: #002b36,#839496,#002b36,#002b36,#268bd2
-rofi.color-active: #002b36,#268bd2,#002b36,#002b36,#268bd2
-rofi.color-urgent: #002b36,#268bd2,#002b36,#002b36,#268bd2
+rofi.color-window: #80002b36,#00002b36,#80002b36
+rofi.color-normal: #00002b36,#839496,#00002b36,#00002b36,#268bd2
+rofi.color-active: #00002b36,#93a1a1,#00002b36,#00002b36,#859900
+rofi.color-urgent: #00002b36,#dc322f,#00002b36,#00002b36,#859900

@@ -30,7 +30,7 @@ override-redirect = true
 font-0 = "Font Awesome 5 Free:style=Solid:pixelsize=9;0"
 font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=9;0"
 font-2 = "Font Awesome 5 Brands:pixelsize=9;0"
-font-3 = "Hasklug Nerd Font Mono:size=10;0"
+font-3 = "FuraCode Nerd Font Mono:size=10;0"
 font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 
 ;--------;
@@ -38,7 +38,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #ffe6f4
+foreground = #d33682
 border-color = 0
 
 ;---------------;
@@ -50,9 +50,10 @@ padding-left = 2
 padding-right = 2
 module-margin = 1.5
 
-;modules-left = battery volume backlight
+;modules-left = 
 ;modules-center = date time 
 modules-right = cpu memory temperature network
+ 
 
 [bar/bottom]
 ;------------;
@@ -85,7 +86,7 @@ override-redirect = true
 font-0 = "Font Awesome 5 Free:style=Solid:pixelsize=9;0"
 font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=9;0"
 font-2 = "Font Awesome 5 Brands:pixelsize=9;0"
-font-3 = "Hasklug Nerd Font Mono:size=10;0"
+font-3 = "FuraCode Nerd Font Mono:size=10;0"
 font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 
 ;--------;
@@ -93,7 +94,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #ffe6f4
+foreground = #d33682
 border-color = 0
 
 ;---------------;
@@ -105,11 +106,11 @@ padding-left = 2
 padding-right = 2
 module-margin = 1.5
 
-;modules-left = mpd 
-modules-center = i3
+;modules-left = i3
+modules-center = i3 
 ;modules-right = 
 
-tray-position = right
+tray-position = right 
 tray-detached = false 
 tray-padding = 2
 tray-offset-x = -16
@@ -146,7 +147,7 @@ override-redirect = true
 font-0 = "Font Awesome 5 Free:style=Solid:pixelsize=9;0"
 font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=9;0"
 font-2 = "Font Awesome 5 Brands:pixelsize=9;0"
-font-3 = "Hasklug Nerd Font Mono:size=10;0"
+font-3 = "FuraCode Nerd Font Mono:size=10;0"
 font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 
 ;--------;
@@ -154,7 +155,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #ffe6f4
+foreground = #d33682
 border-color = 0
 
 ;---------------;
@@ -168,7 +169,7 @@ module-margin = 1.5
 
 modules-left = date time updates 
 ;modules-center =
-;modules-right =
+;modules-right = date time updates
 
 [bar/bottom_secondary]
 ;------------;
@@ -201,7 +202,7 @@ override-redirect = true
 font-0 = "Font Awesome 5 Free:style=Solid:pixelsize=9;0"
 font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=9;0"
 font-2 = "Font Awesome 5 Brands:pixelsize=9;0"
-font-3 = "Hasklug Nerd Font Mono:size=10;0"
+font-3 = "FuraCode Nerd Font Mono:size=10;0"
 font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 
 ;--------;
@@ -209,7 +210,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #ffe6f4
+foreground = #d33682
 border-color = 0
 
 ;---------------;
@@ -223,7 +224,7 @@ module-margin = 1.5
 
 modules-left = volume mpd 
 modules-center = i3
-;modules-right = 
+;modules-right = volume mpd i3
 
 
 ;---------;
@@ -237,9 +238,9 @@ pin-workspaces = true
 strip-wsnumbers = true
 enable-scroll = false
 
-label-unfocused-foreground = #ffbde1
-label-focused-foreground = #ffe6f4
-label-urgent-foreground = #ba5297
+label-unfocused-foreground = #2aa198
+label-focused-foreground = #d33682
+label-urgent-foreground = #dc322f
 
 [module/time]
 type = internal/date

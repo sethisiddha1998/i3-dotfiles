@@ -11,7 +11,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "NeoSolarized"
+    colorscheme = "solarized"
     background = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
@@ -36,8 +36,19 @@ name = 'shell'
 default_position = 'top'
 default_height = 30
 
+#[[layers]]
+#name = 'colorscheme'
+
+[[custom_plugins]]
+name = 'altercation/vim-colors-solarized'
+merged = 0
+
 [[layers]]
-name = 'colorscheme'
+name = 'checkers'
+lint_on_the_fly = true
+
+[[layers]]
+name = 'VersionControl'
 
 [[layers]]
 name = 'git'
@@ -52,19 +63,25 @@ name = 'lang/c'
 name = 'lang/html'
 
 [[layers]]
-name = 'lang/javascript'
+name = 'lang/java'
+
+#[[layers]]
+#name = 'lang/javascript'
 
 [[layers]]
 name = 'lang/json'
 
-[[layers]]
-name = 'lang/lua'
+#[[layers]]
+#name = 'lang/lua'
 
-[[layers]]
-name = 'lang/markdown'
+#[[layers]]
+#name = 'lang/markdown'
 
 [[layers]]
 name = 'lang/python'
 
 [[layers]]
 name = 'lang/sh'
+
+[[layers]]
+name = 'tools'
