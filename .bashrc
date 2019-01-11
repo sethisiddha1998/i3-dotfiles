@@ -10,7 +10,7 @@ alias ls='ls --color=auto'
 alias please='sudo'
 alias bye='poweroff'
 alias fastai='conda activate fastai'
-alias neofetch='neofetch --kitty .config/neofetch/image/'
+alias nf='neofetch --kitty .config/neofetch/image/'
 # Kittens
 alias icat="kitty +kitten icat"
 alias d="kitty +kitten diff"
