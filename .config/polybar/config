@@ -39,7 +39,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #268bd2
+foreground = #fdf6e3
 border-color = 0
 
 ;---------------;
@@ -95,7 +95,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #268bd2
+foreground = #fdf6e3
 border-color = 0
 
 ;---------------;
@@ -156,7 +156,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #268bd2
+foreground = #fdf6e3
 border-color = 0
 
 ;---------------;
@@ -211,7 +211,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #268bd2
+foreground = #fdf6e3
 border-color = 0
 
 ;---------------;
@@ -239,8 +239,8 @@ pin-workspaces = true
 strip-wsnumbers = true
 enable-scroll = false
 
-label-unfocused-foreground = #2aa198
-label-focused-foreground = #268bd2
+label-unfocused-foreground = #93a1a1
+label-focused-foreground = #fdf6e3
 label-urgent-foreground = #dc322f
 
 [module/time]
