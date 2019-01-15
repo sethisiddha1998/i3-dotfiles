@@ -84,9 +84,9 @@ override-redirect = true
 ; FONTS ;
 ;-------;
 
-font-0 = "Font Awesome 5 Free:style=Solid:pixelsize=10;2"
-font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=10;2"
-font-2 = "Font Awesome 5 Brands:pixelsize=10;2"
+font-0 = "Font Awesome 5 Free:style=Solid:pixelsize=10;0"
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=10;0"
+font-2 = "Font Awesome 5 Brands:pixelsize=10;0"
 font-3 = "FuraCode Nerd Font Mono:size=10;0"
 font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 

@@ -61,4 +61,5 @@ else
 fi
 
 numlockx &
+~/.fehbg &
 exec i3

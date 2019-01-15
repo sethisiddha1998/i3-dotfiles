@@ -79,10 +79,7 @@ XTerm*selectToClipboard:true
 *color7:		S_base2
 *color15:		S_base3
 
-Xcursor.theme: 		Bibata_Amber
-Xcursor.size:		0
-
-URxvt.font: 		xft:Fira Code:size=12
+URxvt.font: 		xft:Monospace:size=12
 URxvt.depth:		32
 URxvt.background:	[100]S_base03
 URxvt*scrollBar:                  false
