@@ -96,9 +96,9 @@ bindsym $mod+F3 exec pcmanfm
 bindsym $mod+Shift+F3 exec gksu pcmanfm 
 #bindsym $mod+F3 exec $terminal -e 'ranger' 
 #bindsym $mod+Shift+F3 exec sudo $terminal -e 'ranger' 
-bindsym $mod+F4 exec mailspring
+bindsym $mod+F4 exec $terminal -e 'htop' 
 bindsym $mod+F5 exec $terminal -e 'ncmpcpp'
-bindsym $mod+F6 exec gnome-calculator
+bindsym $mod+F6 exec mailspring
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym Print exec scrot -q 80 '%Y-%m-%d-%s_screenshot_$wx$h.png' -e 'mv $f ~/Pictures/'
 bindsym $mod+Print exec scrot -q 80 '%Y-%m-%d-%s_screenshot_$wx$h.png' -e 'mv $f ~/Pictures/' -d 5
@@ -364,7 +364,7 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-client.focused #2aa198 #2aa198 #fdf6e3 #6c71c4
-client.focused_inactive #073642 #073642 #eee8d5 #6c71c4
-client.unfocused #073642 #073642 #93a1a1 #586e75
-client.urgent #d33682 #d33682 #fdf6e3 #dc322f
+client.focused #689d6a #689d6a #282828 #282828
+client.focused_inactive #1d2021 #1d2021 #928374 #282828
+client.unfocused #32302f #32302f #928374 #282828
+client.urgent #cc241d #cc241d #ebdbb2 #282828

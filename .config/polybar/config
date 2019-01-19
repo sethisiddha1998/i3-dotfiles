@@ -39,7 +39,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #fdf6e3
+foreground = #fbf1c7
 border-color = 0
 
 ;---------------;
@@ -95,7 +95,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #fdf6e3
+foreground = #fbf1c7
 border-color = 0
 
 ;---------------;
@@ -156,7 +156,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #fdf6e3
+foreground = #fbf1c7
 border-color = 0
 
 ;---------------;
@@ -211,7 +211,7 @@ font-4 = "WenQuanYi Micro Hei Mono:size=10;0"
 ;--------;
 
 background = 0
-foreground = #fdf6e3
+foreground = #fbf1c7
 border-color = 0
 
 ;---------------;
@@ -239,9 +239,9 @@ pin-workspaces = true
 strip-wsnumbers = true
 enable-scroll = false
 
-label-unfocused-foreground = #93a1a1
-label-focused-foreground = #fdf6e3
-label-urgent-foreground = #dc322f
+label-unfocused-foreground = #d5c4a1
+label-focused-foreground = #fbf1c7
+label-urgent-foreground = #cc241d
 
 [module/time]
 type = internal/date
@@ -341,7 +341,7 @@ label = %{A3:kitty -e htop -s PERCENT_CPU & disown:} %percentage%%%{A}
 
 [module/memory]
 type = internal/memory
-label = %{A3:kitty -e htop -s PERCENT_MEM & disown:} %percentage_used%%%{A}
+label = %{A3:kitty -e htop -s PERCENT_MEM & disown:} %percentage_used%% | %percentage_swap_used%%%{A}
 
 [module/network]
 type = internal/network
@@ -354,6 +354,15 @@ warn-temperature = 60
 label = %{A3:kitty -e watch sensors & disown:} %temperature-c%%{A}
 label-warn = %{A3:kitty -e watch sensors & disown:} %temperature-c%%{A}
 label-warn-foreground = #dc322f
+
+[module/filesystem]
+type = internal/fs
+mount-0 = /
+mount-1 = /home
+interval = 10
+spacing = 1
+format-mounted =  <label-mounted>
+label-mounted = %mountpoint% %percentage_used%%
 
 [module/updates]
 type = custom/script

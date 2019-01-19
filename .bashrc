@@ -27,9 +27,6 @@ POWERLINE_BASH_SELECT=1
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
-PYTHONPATH="${PYTHONPATH}:/home/sean/Documents/fastai/"
-export PYTHONPATH
-
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
