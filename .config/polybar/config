@@ -239,7 +239,7 @@ pin-workspaces = true
 strip-wsnumbers = true
 enable-scroll = false
 
-label-unfocused-foreground = #d5c4a1
+label-unfocused-foreground = #bdae93
 label-focused-foreground = #fbf1c7
 label-urgent-foreground = #cc241d
 
